@@ -1,5 +1,12 @@
 <?php 
 
+if ($_SERVER['REQUEST_METHOD'] != "POST") {
+  header('location: ../users.php');
+  exit();
+}
+
+
+
 $username = $_POST['username'];
 $password = md5($_POST['password']);
 $email = $_POST['email'];

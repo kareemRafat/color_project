@@ -36,7 +36,11 @@
 
           include "design/user_add.php";
 
-        } else {
+        } elseif($_GET['action'] == 'edit'){
+
+					include "design/user_edit.php";
+				
+				} else {
 
           echo "Requested page not found";
 
