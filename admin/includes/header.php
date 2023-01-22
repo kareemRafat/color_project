@@ -1,3 +1,16 @@
+<?php 
+
+session_start();
+
+// check logged in user
+if (!isset($_SESSION['login'])) {
+	header("location: login.php");
+	exit();
+}
+
+
+?>
+
 <!DOCTYPE html>
 <html>
 <head>

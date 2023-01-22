@@ -26,7 +26,7 @@
         <td><?= $product['name'] ?></td>
         <td><?= $product['price'] ?></td>
         <td><?= $product['sale'] ?></td>
-        <td><?= $product['img'] ?></td>
+        <td><img style="width: 100px;" src="images/<?= $product['img'] ?>" alt=""></td>
         <td><?php
         
         $cat_id = $product['cat_id'] ;
